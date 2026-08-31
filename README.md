@@ -62,6 +62,4 @@ Weights, biases, and test input images are preloaded into block memory from hex 
 - **Start signal is level-triggered**, not edge-triggered — the pipeline currently begins as soon as `SW[0]` is high rather than on a clean off→on transition, which is worth revisiting for cleaner control from a physical switch.
 - Potential future additions: pipelining across layers, parallel MAC arrays, support for convolutional layers, and on-device training data feedback via SignalTap capture.
 
-## License
 
-_Add your preferred license here._

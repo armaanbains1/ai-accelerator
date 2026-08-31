@@ -1,0 +1,4 @@
+Warning (10268): Verilog HDL information at firstlayer.sv(51): always construct contains both blocking and non-blocking assignments File: C:/Users/armaa/Downloads/projects/ai_accelerator/firstlayer.sv Line: 51
+Info (10281): Verilog HDL Declaration information at secondlayer.sv(7): object "complete" differs only in case from object "COMPLETE" in the same scope File: C:/Users/armaa/Downloads/projects/ai_accelerator/secondlayer.sv Line: 7
+Warning (10268): Verilog HDL information at argmax.sv(11): always construct contains both blocking and non-blocking assignments File: C:/Users/armaa/Downloads/projects/ai_accelerator/argmax.sv Line: 11
+Warning (10268): Verilog HDL information at top.sv(51): always construct contains both blocking and non-blocking assignments File: C:/Users/armaa/Downloads/projects/ai_accelerator/top.sv Line: 51

@@ -1,11 +1,11 @@
 module top (
     input  wire CLOCK_50, 
-	 input SW[0:0],
+	 input  wire [0:0] SW,
     output reg  [9:0] LEDR,
 	 output reg [6:0] HEX2
 );
 
-    reg [7:0]         layer1Output [31:0] ;
+    reg signed [7:0] layer1Output [31:0];
     reg signed [26:0] layer2Output [9:0] ;
     reg [3:0]         result = 0;
     
@@ -16,7 +16,7 @@ module top (
 
     firstlayer u_firstlayer (
         .CLOCK_50    (CLOCK_50),
-		  .SW				(SW[0:0]),
+		  .SW          (SW),
         .done        (firstLayerComplete),
         .layer_1_out (layer1Output),
 		  .LEDR(LEDR[0])

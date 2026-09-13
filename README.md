@@ -44,7 +44,7 @@ Each layer is implemented as a synchronous finite state machine (`IDLE → ROW �
 The design includes an onboard cycle counter (`cycle_count`) that measures how many `CLOCK_50` cycles elapse between the start of inference and completion of the second layer, for benchmarking purposes.
 
 - Clock: 50 MHz (20 ns per cycle)
-- Current measured latency: **~11,949 cycles ≈ 239 µs** per full inference pass (first layer + second layer)
+- Current measured latency: **~31,610 clock cycles ≈ 632.2 µs** per full inference pass (first layer + second layer)
 
 This reflects a fully **serial** implementation - one MAC operation per clock cycle. Because FPGAs excel at parallel execution, a natural next step is unrolling the per-neuron / per-pixel loops into multiple concurrent MAC units, which would reduce latency roughly in proportion to the degree of parallelism introduced.
 

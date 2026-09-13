@@ -20,7 +20,7 @@ Input (784 px, 28×28 grayscale)
 
 - **Target platform:** Intel/Altera DE-series FPGA board (e.g. DE10-Lite / DE2), 50 MHz onboard clock (`CLOCK_50`)
 - **Toolchain:** Quartus Prime (synthesis, programming, SignalTap for hardware debug)
-- **Language:** Verilog
+- **Language:** Verilog and SystemVerilog
 
 ## Modules
 
